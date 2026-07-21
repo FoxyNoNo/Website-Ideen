@@ -5,3 +5,8 @@ function start(){
     );
 
 }
+
+function openRocketGame(){
+window.location.href =
+"../games/rocket/index.html";
+}
