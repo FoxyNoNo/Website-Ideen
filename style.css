@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-
+    
     background:
     linear-gradient(
         135deg,
@@ -115,77 +115,111 @@ button:hover {
     color:#ddd;
 }
 
-.games-container {
+/* ---------- Spiele-Seite ---------- */
 
-display:flex;
+.games-page{
 
-justify-content:center;
+    padding-top:120px;
+    padding-bottom:60px;
 
-margin-top:40px;
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.games-page h1{
+
+    text-align:center;
+    margin-bottom:10px;
+
+}
+
+.games-page p{
+
+    text-align:center;
+    margin-bottom:40px;
 
 }
 
 
+/* Raster */
 
-.game-card {
+.games-grid{
 
-width:350px;
+    display:grid;
 
-background:
-rgba(255,255,255,0.1);
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
 
-border-radius:20px;
-
-overflow:hidden;
-
-cursor:pointer;
-
-transition:0.3s;
+    gap:35px;
 
 }
 
 
+/* Link */
 
-.game-card:hover {
+.game-link{
 
-transform:scale(1.05);
-
-}
-
-
-
-.game-card img {
-
-width:100%;
-
-height:200px;
-
-object-fit:cover;
+    text-decoration:none;
+    color:white;
 
 }
 
 
+/* Karte */
 
-.game-card h2 {
+.game-card{
 
-padding:15px;
+    background:rgba(255,255,255,0.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:0.25s;
+
+    cursor:pointer;
+
+    width:350px;
 
 }
 
 
+.game-card:hover{
 
-.game-card p {
-
-padding:0 15px 20px;
-
-color:#ddd;
+    transform:translateY(-8px);
 
 }
 
-.game-link {
 
-text-decoration:none;
+.game-card img{
 
-color:white;
+    width:100%;
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+
+.game-info{
+
+    padding:20px;
+
+}
+
+
+.game-info h2{
+
+    margin-bottom:10px;
+
+}
+
+
+.game-info p{
+
+    text-align:left;
 
 }

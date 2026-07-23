@@ -1,7 +1,7 @@
 function start(){
 
     alert(
-        "Willkommen! Die Website wird bald erweitert 🚀"
+        "Willkommen! Die Website wird bald erweitert"
     );
 
 }
